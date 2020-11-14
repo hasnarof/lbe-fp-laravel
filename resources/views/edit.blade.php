@@ -1,8 +1,7 @@
-@extends('layouts.app')
+@extends('master')
 
-@section('content')
+@section('isi_halaman')
 
-<h2>Cars E-Catalogue</h2>
 <h3>Edit Car's Detail</h3>
 
 <a href="/mobil"> Kembali</a>
