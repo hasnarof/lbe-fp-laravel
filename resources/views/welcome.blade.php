@@ -4,17 +4,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Cartusiast</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
-        <!-- Styles -->
+        <!-- Styles -->1
         <style>
 
-        .top-right links{
-            
-        }
+
             html, body {
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -47,7 +45,7 @@
             .top-right {
                
                 position: absolute;
-                top: 75%;
+                top: 80%;
                 left: 40%;
                
             }
@@ -79,19 +77,22 @@
             }
             .links > a {
                float: right;
+               
                 padding-left: 30px;
-                color: #000000;
-                font-size: 20px;
+                color: #FFFFFF;
+                font-size: 25px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
-                transition: color .3s;
+                transition:  .3s;
                 
             }
             .links > a:hover {
-               color: #ffffff;
-                transition: color .3s;
+               color: #009A4E;
+               transform: translateY(-10px);
+                transition:  .3s;
+                
                 
             }
 
@@ -101,7 +102,7 @@
             display: block;
             width: 0;
             height: 2px;
-            background-color: #ffffff;
+            background-color: #009A4E;
             cursor: pointer;
             transition: width .3s;
             }
@@ -116,11 +117,11 @@
             .m-b-md {
                 color: #ffffff;
                 position: relative;
-                /* margin-bottom: 30%; */
+                margin-bottom: 20%;
                 right: 35%;
                 font-size: 120px;
                 letter-spacing: 5px; 
-                bottom: 40%;
+               
                 
                 /* margin-bottom: 30px; */
             }
