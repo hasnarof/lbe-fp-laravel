@@ -6,6 +6,7 @@
 
 
 <form action="/mobil/store" method="post">
+  @csrf
   <div class="col-3">
     <input type="text" class="effect-1" name="model" required="required" placeholder="Model">
     <span class="focus-border"></span>

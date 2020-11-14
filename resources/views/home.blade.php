@@ -32,10 +32,12 @@
             @endif
 
             You are logged in!
+            <br></br>
+            <a href="/mobil">Go to Cars' List</a>
           </div>
-          <div class="bar">
+          <!-- <div class="bar">
             <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-          </div>
+          </div> -->
 
         </div>
       </div>
