@@ -11,13 +11,23 @@
 
         <!-- Styles -->
         <style>
+
+        .top-right links{
+            
+        }
             html, body {
-                background-color: #fff;
-                color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
+            }
+
+            body{
+                background-image: url(image/bg-laravel.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% ;
+                width: 100%;
+                height: 100%;
             }
 
             .full-height {
@@ -35,31 +45,84 @@
             }
 
             .top-right {
+               
                 position: absolute;
-                right: 10px;
-                top: 18px;
+                top: 75%;
+                left: 40%;
+               
             }
 
             .content {
                 text-align: center;
             }
 
-            .title {
-                font-size: 84px;
+           
+            
+            .text{
+                position: relative;
+                align-items: center;
+                display: flex;
+                justify-content: center;
             }
 
+            .text-content{
+                color: #ffffff;
+                width: 100%;
+                font-size: 18px;
+                position: relative;
+                left: 70%;
+                margin-top: 15%;
+                letter-spacing: 20px;
+                font-weight: 600;
+                
+                
+            }
             .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
+               float: right;
+                padding-left: 30px;
+                color: #000000;
+                font-size: 20px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
+                transition: color .3s;
+                
+            }
+            .links > a:hover {
+               color: #ffffff;
+                transition: color .3s;
+                
             }
 
+
+            .animasi::after{
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #ffffff;
+            cursor: pointer;
+            transition: width .3s;
+            }
+
+            .animasi:hover::after{
+            width: 100%;
+            transition: width .3s;
+        }
+
+
+
             .m-b-md {
-                margin-bottom: 30px;
+                color: #ffffff;
+                position: relative;
+                /* margin-bottom: 30%; */
+                right: 35%;
+                font-size: 120px;
+                letter-spacing: 5px; 
+                bottom: 40%;
+                
+                /* margin-bottom: 30px; */
             }
         </style>
     </head>
@@ -68,31 +131,29 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a class="animasi" href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                        <a class="animasi" href="{{ route('login') }}">Login</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
+                            <a class="animasi" href="{{ route('register') }}">Register</a>
                         @endif
                     @endauth
                 </div>
             @endif
 
+            <div class="text">
+
+            <p class="text-content"> TRADE , SELL , SAVE </p>
+
+            </div>
+
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    CARTUSIAST
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+              
             </div>
         </div>
     </body>
