@@ -7,8 +7,8 @@
 
 <body>
 
-  <h2>Database Mobil</h2>
-  <!-- <h3></h3> -->
+  <h2>Cars E-Catalogue</h2>
+  <h3>Cars' List</h3>
 
   <a href="/mobil/tambah"> + Add a new car</a>
 
@@ -18,12 +18,12 @@
   <table border="1">
     <tr>
       <th>Model</th>
-      <th>Merk</th>
-      <th>Harga</th>
-      <th>Tipe Bodi</th>
-      <th>Transmisi</th>
-      <th>Tipe Bahan Bakar</th>
-      <th>Aksi</th>
+      <th>Brand</th>
+      <th>Price</th>
+      <th>Body Type</th>
+      <th>Transmission</th>
+      <th>Fuel Type</th>
+      <th>Action</th>
     </tr>
     @foreach($mobil as $m)
     <tr>
@@ -36,7 +36,7 @@
       <td>
         <a href="/mobil/edit/{{ $m->mobil_id }}">Edit</a>
         |
-        <a href="/mobil/hapus/{{ $m->mobil_id }}">Hapus</a>
+        <a href="/mobil/hapus/{{ $m->mobil_id }}">Delete</a>
       </td>
     </tr>
     @endforeach
